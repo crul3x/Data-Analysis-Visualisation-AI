@@ -8,7 +8,7 @@ This reflects a real and growing skill in modern data work - knowing how to use 
 
 ---
 
-A end-to-end data analytics project covering data cleaning, exploratory analysis, pivot-style summary tables and charts, and an interactive web dashboard built using AI assistance.
+An end-to-end data analytics project covering data cleaning, exploratory analysis, pivot-style summary tables and charts, and an interactive web dashboard built using AI assistance.
 
 ---
 
