@@ -64,6 +64,8 @@ All cleaning decisions were documented in the **Data Cleaning Log** sheet before
 - **Derived columns** - added `Revenue` (Quantity × Unit_Price), `Month`, `Month_Num`, `Quarter`
 - **Product Reference Table** - built a 15-SKU lookup table used as an XLOOKUP source throughout the analysis
 
+### Cleaned Data:
+
 ![Cleaned Data](screenshots/cleaneddata.png.png)
 
 ### 2. Exploratory Analysis
