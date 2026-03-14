@@ -2,15 +2,13 @@
 
 ## AI Transparency Statement
 
-This project was built with AI assistance (Claude by Anthropic) as an intentional part of the workflow. The dataset was synthetically generated using Python, the workbook structure and sheet contents were constructed programmatically, and the dashboard was built using AI-assisted code generation.
+This project was built with AI assistance as an intentional part of the workflow.
 
-This reflects a real and growing skill in modern data work — knowing how to use AI tooling effectively, direct it toward the right outputs, and understand the decisions behind the data. Every analytical decision (null handling strategy, date standardization, derived column logic, chart selection) was deliberately chosen and is documented in the Data Cleaning Log sheet.
-
-A second project built entirely by hand — manual formulas, pivot tables, and dashboard — is also available in this portfolio to demonstrate raw spreadsheet skills without AI assistance.
+This reflects a real and growing skill in modern data work - knowing how to use AI tooling effectively, direct it toward the right outputs, and understand the decisions behind the data. Every analytical decision (null handling strategy, date standardization, derived column logic, chart selection) was deliberately chosen and is documented in the Data Cleaning Log sheet.
 
 ---
 
-A end-to-end data analytics project covering data cleaning, exploratory analysis, pivot-style summary tables, and an interactive web dashboard — built using Python, Excel/Google Sheets, and Chart.js.
+A end-to-end data analytics project covering data cleaning, exploratory analysis, pivot-style summary tables and charts, and an interactive web dashboard built using AI assistance.
 
 ---
 
@@ -18,7 +16,7 @@ A end-to-end data analytics project covering data cleaning, exploratory analysis
 
 This project analyzes 1,200 fictional sales transactions recorded across Jan–Dec 2023, spanning 4 regions, 6 products (15 SKUs), 6 sales representatives, and 3 customer segments.
 
-The goal was to simulate a realistic analyst workflow — from receiving a raw, messy dataset all the way through to a polished, interactive dashboard — while documenting every decision made along the way.
+The goal was to simulate a realistic analyst workflow — from receiving a raw, messy dataset all the way through to a polished, interactive dashboard while documenting every decision made along the way.
 
 ### Business Questions
 
@@ -51,24 +49,9 @@ The goal was to simulate a realistic analyst workflow — from receiving a raw, 
 
 ---
 
-## Tools & Technologies
-
-| Tool | Purpose |
-|---|---|
-| Python (`csv`, `statistics`, `openpyxl`) | Data generation, cleaning logic, workbook construction |
-| Google Sheets / Excel (.xlsx) | Analysis workbook — structured sheets, summary tables, charts |
-| Chart.js | Interactive web dashboard |
-| HTML / CSS / JavaScript | Dashboard frontend |
-| GitHub Pages | Dashboard hosting |
-
----
-
 ## Process Walkthrough
 
-### 1. Data Generation
-The raw dataset was generated using Python with deliberate quality issues introduced — inconsistent casing, mixed date formats, and ~12% missing Quantity values — to simulate a realistic messy dataset.
-
-### 2. Data Cleaning
+### 1. Data Cleaning
 All cleaning decisions were documented in the **Data Cleaning Log** sheet before being applied. Key decisions:
 
 - **Casing** — standardized Region, Category, and Customer Segment using `PROPER(TRIM())`
@@ -77,10 +60,10 @@ All cleaning decisions were documented in the **Data Cleaning Log** sheet before
 - **Derived columns** — added `Revenue` (Quantity × Unit_Price), `Month`, `Month_Num`, `Quarter`
 - **Product Reference Table** — built a 15-SKU lookup table used as an XLOOKUP source throughout the analysis
 
-### 3. Exploratory Analysis
+### 2. Exploratory Analysis
 Summary statistics calculated across 5 dimensions: overall KPIs, revenue by region, revenue by product, revenue by month, and revenue by sales rep.
 
-### 4. Analysis & Charts
+### 3. Analysis & Charts
 5 paired sections — each with a summary table on the left and a corresponding chart on the right:
 - Sales Rep Performance (horizontal bar)
 - Regional Trends by Month (cross-tab + line chart)
@@ -88,8 +71,8 @@ Summary statistics calculated across 5 dimensions: overall KPIs, revenue by regi
 - Customer Segment by Region (cross-tab + donut)
 - Quarterly Performance (grouped table + column chart)
 
-### 5. Interactive Dashboard
-A standalone HTML dashboard built with Chart.js. All 1,200 rows are embedded — no server required. Filterable by Region and Quarter, with live-updating KPI cards and 6 charts.
+### 4. Interactive Dashboard
+A standalone interactive dashboard built with AI assistance. Filterable by Region and Quarter, with live-updating KPI cards and 6 charts.
 
 ---
 
@@ -104,25 +87,6 @@ A standalone HTML dashboard built with Chart.js. All 1,200 rows are embedded —
 
 ---
 
-## File Structure
-
-```
-sales-performance-analysis/
-│
-├── data/
-│   └── SalesData_v2.csv          # Original raw dataset (uncleaned)
-│
-├── workbook/
-│   └── SalesDataAnalysis.xlsx    # Full analysis workbook (5 sheets)
-│
-├── dashboard/
-│   └── index.html                # Standalone interactive dashboard
-│
-└── README.md
-```
-
----
-
 ## How to View the Dashboard
 
 **Option 1 — Live link (GitHub Pages)**
@@ -132,10 +96,6 @@ sales-performance-analysis/
 1. Clone or download the repo
 2. Open `dashboard/index.html` in any browser
 3. No install, no server needed — everything is self-contained
-
-**Option 3 — View the workbook**
-1. Download `workbook/SalesDataAnalysis.xlsx`
-2. Upload to Google Drive → right click → Open with Google Sheets
 
 ---
 
