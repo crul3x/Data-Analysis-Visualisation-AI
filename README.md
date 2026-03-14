@@ -47,7 +47,7 @@ The goal was to simulate a realistic analyst workflow - from receiving a raw, me
 - Inconsistent casing across Region, Category, and Customer Segment columns
 - 145 missing Quantity values (~12.1% of rows)
 
-![Raw Data](screenshots/rawdata.png.png)
+![Raw Data](screenshots/rawdata.png)
 
 ---
 
@@ -56,7 +56,7 @@ The goal was to simulate a realistic analyst workflow - from receiving a raw, me
 ### 1. Data Cleaning : [View Data Cleaning Log](https://docs.google.com/spreadsheets/d/18AY2mWcOMY0Ng6NvucAeSeqvxbjzwo8O/edit?gid=1949556545#gid=1949556545)
 All cleaning decisions were documented in the **Data Cleaning Log** sheet before being applied. Key decisions:
 
-![Data Cleaning Log](screenshots/cleaninglog.png.png)
+![Data Cleaning Log](screenshots/cleaninglog.png)
 
 - **Casing** - standardized Region, Category, and Customer Segment using `PROPER(TRIM())`
 - **Dates** - unified 4 formats into `DD/MM/YYYY` using `DATEVALUE()` with a helper column
@@ -66,12 +66,12 @@ All cleaning decisions were documented in the **Data Cleaning Log** sheet before
 
 ### 1.1 Cleaned Data : [View Cleaned Data](https://docs.google.com/spreadsheets/d/18AY2mWcOMY0Ng6NvucAeSeqvxbjzwo8O/edit?gid=370987987#gid=370987987)
 
-![Cleaned Data](screenshots/cleaneddata.png.png)
+![Cleaned Data](screenshots/cleaneddata.png)
 
 ### 2. Exploratory Analysis : [View Exploratory Analysis](https://docs.google.com/spreadsheets/d/18AY2mWcOMY0Ng6NvucAeSeqvxbjzwo8O/edit?gid=682652189#gid=682652189)
 Summary statistics calculated across 5 dimensions: overall KPIs, revenue by region, revenue by product, revenue by month, and revenue by sales rep.
 
-![Exploratory Analysis](screenshots/exploratoryanalysis.png.png)
+![Exploratory Analysis](screenshots/exploratoryanalysis.png)
 
 ### 3. Analysis & Charts : [View Analysis & Charts](https://docs.google.com/spreadsheets/d/18AY2mWcOMY0Ng6NvucAeSeqvxbjzwo8O/edit?gid=1817375920#gid=1817375920)
 5 paired sections - each with a summary table on the left and a corresponding chart on the right:
@@ -81,13 +81,13 @@ Summary statistics calculated across 5 dimensions: overall KPIs, revenue by regi
 - Customer Segment by Region (cross-tab + donut)
 - Quarterly Performance (grouped table + column chart)
 
-![Analysis and Charts](screenshots/charts.png.png)
+![Analysis and Charts](screenshots/charts.png)
 
 ### 4. Interactive Dashboard : [View Interactive Dashboard](https://crul3x.github.io/Data-Analysis-Project/)
 A standalone interactive dashboard built with AI assistance. Filterable by Region and Quarter, with live-updating KPI cards and 6 charts.
 
-![Dashboard1](screenshots/dashboard1.png.png)
-![Dashboard2](screenshots/dashboard2.png.png)
+![Dashboard1](screenshots/dashboard1.png)
+![Dashboard2](screenshots/dashboard2.png)
 
 ---
 
