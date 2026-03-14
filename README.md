@@ -92,11 +92,6 @@ A standalone interactive dashboard built with AI assistance. Filterable by Regio
 **Option 1 - Live link (GitHub Pages)**
 👉 [https://crul3x.github.io/sales-performance-analysis](https://crul3x.github.io/sales-performance-analysis)
 
-**Option 2 - Run locally**
-1. Clone or download the repo
-2. Open `dashboard/index.html` in any browser
-3. No install, no server needed - everything is self-contained
-
 ---
 
 *Dataset is synthetic and does not represent any real company or individuals.*
